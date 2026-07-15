@@ -7,7 +7,7 @@ const alunoVazio = {
   email: '',
   telefone: '',
   data_nascimento: '',
-  observacoes: '',
+  objetivo: '',
 }
 
 export default function AlunoFormModal({ aluno, aberto, onFechar, onSalvar }) {
@@ -21,7 +21,7 @@ export default function AlunoFormModal({ aluno, aberto, onFechar, onSalvar }) {
         email: aluno.email || '',
         telefone: aluno.telefone || '',
         data_nascimento: aluno.data_nascimento || '',
-        observacoes: aluno.observacoes || '',
+        objetivo: aluno.objetivo || '',
       })
     } else {
       setForm(alunoVazio)
@@ -101,12 +101,12 @@ export default function AlunoFormModal({ aluno, aberto, onFechar, onSalvar }) {
 
           <div>
             <label className="mb-1 block text-sm font-medium text-gray-700">
-              Observações
+              Objetivo de Treino
             </label>
             <textarea
               rows={3}
-              value={form.observacoes}
-              onChange={(e) => handleChange('observacoes', e.target.value)}
+              value={form.objetivo}
+              onChange={(e) => handleChange('objetivo', e.target.value)}
               className="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary"
             />
           </div>

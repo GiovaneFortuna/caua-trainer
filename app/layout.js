@@ -1,8 +1,8 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Gerenciamento de Alunos',
-  description: 'Plataforma para profissionais gerenciarem seus alunos',
+  title: 'Cauã de Matos',
+  description: 'Plataforma para Cauã de Matos',
 }
 
 export default function RootLayout({ children }) {
